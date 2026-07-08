@@ -5,10 +5,6 @@ in a specified directory and its subdirectories. The thread class takes a target
 the root directory to start the search from, the target filename to look for, and a wait group for synchronization.
 The run method of the thread class executes the target function with the provided parameters.
 """
-<<<<<<< HEAD
-from fileinput import filename
-=======
->>>>>>> e8680a1 (refactor; Remove unnecessary imports.)
 from threading import Thread
 from typing import Callable
 from pathlib import Path
