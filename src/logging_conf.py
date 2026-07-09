@@ -9,7 +9,7 @@ init(autoreset=True)
 
 
 # Logs configuration
-os.makedirs('logs', exist_ok=True)
+os.makedirs('../logs', exist_ok=True)
 
 
 def base_logger(logger: getLogger):
@@ -17,7 +17,7 @@ def base_logger(logger: getLogger):
     logger.setLevel(logging.DEBUG)
 
     # Declare handlers
-    file_handler = logging.FileHandler('logs/file-searcher.log')
+    file_handler = logging.FileHandler('../logs/file-searcher.log')
     stream_handler = logging.StreamHandler()
 
     # Determine and set specific formatter for file handler
