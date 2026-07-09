@@ -30,8 +30,8 @@ def base_logger(logger: getLogger):
     stream_handler.setFormatter(stream_formatter)
 
     # Set specific level for handlers
-    file_handler.setLevel(logging.WARNING)
-    stream_handler.setLevel(logging.DEBUG)
+    file_handler.setLevel(logging.DEBUG)
+    stream_handler.setLevel(logging.INFO)
 
     # Checks if the logger does not have any handlers, then add the handlers to the logger
     if not logger.hasHandlers():
